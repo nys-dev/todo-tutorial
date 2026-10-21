@@ -7,6 +7,19 @@
 - 강의 본문: https://docs.claude-hunt.com
 - 수강생 결과물 공유: https://claude-hunt.com
 
+## 프로젝트 소개
+
+브라우저에서 동작하는 Todo 앱입니다. 서버 없이 `localStorage` 에 데이터를 저장하며, 새로고침해도 할 일이 유지됩니다.
+
+주요 기능:
+
+- 할 일 추가 / 완료 체크 / 삭제
+- 우선순위 (높음·보통·낮음), 마감일, 카테고리 (업무·개인·쇼핑) 지정
+- 상태 필터 (전체·진행중·완료) 및 카테고리 필터
+- 텍스트 검색
+- 정렬 (생성일순·이름순·마감일순)
+- 라이트/다크 테마
+
 ## 기술 스택
 
 - Next.js 16 (App Router, Turbopack)
@@ -33,6 +46,8 @@ bun run build      # 프로덕션 빌드
 bun run start      # 빌드 결과 실행
 bun run lint       # ESLint
 bun run typecheck  # tsc --noEmit
+bun run test       # Vitest 단위 테스트 1회 실행
+bun run test:watch # Vitest 감시 모드
 bun run format     # Prettier 포맷팅
 ```
 
